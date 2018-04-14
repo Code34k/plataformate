@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Post;
+use App\Photo;
+use Illuminate\Http\Request;
+
+class PagesController extends Controller
+{
+    //
+    public function home()
+    {
+    	return view('welcome');
+    }
+
+    public function mapa()
+    {
+    	return view('mapa');
+    }
+
+    public function grupos()
+    {
+        $posts = Post::all();         
+    	return view('grupos', compact('posts'));
+    }
+}

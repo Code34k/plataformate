@@ -1,0 +1,499 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;    
+
+}
+/*estilos svg*/
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D5DBE3;}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;
+    stroke-width:2.4472;stroke-linecap:round;stroke-linejoin:round;
+    stroke-miterlimit:3;}
+.st2{fill:#004E27;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#D06A58;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#90C0A1;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#F0C947;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#A3C037;}
+.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#8D9DCF;}
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#D1D086;}
+/*estilos info*/
+.content{
+	position: relative;
+	padding: 20px;
+	background: #333;
+	margin: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+#carga {
+  position: relative;
+  width: width: 100%;
+  height: 320px;
+  overflow: scroll;
+  overflow-x:hidden;
+}
+
+#carga .contenido {
+  width: 100%;
+  height: 720px;
+}
+
+
+.modal-content {
+    position: relative;
+    color: white;
+    /*background: url(../img/bg1.svg);*/
+    background-color: rgba(46, 139, 87, 0.85);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /* border: 1px solid #999; */
+    /* border: 1px solid rgba(0,0,0,.2); */
+    /* border-radius: 6px; */
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+#icon{
+    margin-top: -2px;
+}
+button.close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid #fff;
+    line-height: 40px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+#btnVer{
+    float: right;
+    font-size: 14pt;
+    width: 39%;
+}
+#carga{
+    overflow-x: hidden;
+    height: 500px;
+}
+
+svg{
+    margin-top: 18px;
+}
+
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+.stars {
+    margin:20px auto 1px;    
+}
+/*menu*/
+#menu{
+    display: inline-flex;
+    margin-top: 40px;
+}
+#Elearning{
+    margin-top: 0px;
+    margin-left: 5px;
+    z-index: 1000;
+    position: relative;
+}
+#Magazin{
+    margin-top: 120px;
+    margin-left: 5px;
+    z-index: 1000;
+    position: relative;
+}
+
+#Instruct{
+    margin-top: 267px;
+    margin-left: 110px;
+}
+#Logos{
+    margin-top: 180px;
+    margin-left: -190px;
+}
+/*listas*/
+#rtl_func li {
+  list-style:none;
+  overflow: hidden;
+}
+
+#rtl_func ul[id|=f_] li { display:inline}
+
+#rtl_func ul[id|=f_] li:nth-child(4):before {display: block; content: '';}
+
+#rtl_func li.list_root {
+  padding-bottom: 20px; 
+}
+
+#asoc{
+    color: #2D2D2D;
+}
+.asotitle{
+    font-weight: bold;
+    font-size: 23px;
+    color: #fff;
+}
+#asotext{
+    font-size: 16px;
+    color: #fff;
+}
+#asorepre{
+    font-size: 16px;
+    color: #fff;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px dashed #f0ad4e!important;
+}
+/* Mostrar la lista en dos columnas */
+ul#rtl_func { 
+  columns: 1; 
+  -webkit-columns: 1; 
+  -moz-columns: 1; 
+}
+
+/* no romper los elementos externos */
+ul#rtl_func > li { 
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid; 
+}
+/*hover municipios*/
+
+#depMeta:hover{
+    fill:#0D6F9C!important;
+    transition:All 1s ease-in-out;
+    -webkit-transition:All 1s ease-in-out;
+    -moz-transition:All 1s ease-in-out;
+    -o-transition:All 1s ease-in-out;
+}
+#laMacarena:hover,#laUribe:hover,
+#mesetas:hover,#vistaHermosa:hover,#elDorado:hover,
+#cubarral:hover,#guamal:hover,#castillaLanueva:hover,
+#acacias:hover,#sancalosdeGuaroa:hover,#villavicencio:hover,
+#elCalvario:hover,#sanJuanito:hover,#restrepo:hover,
+#cumaral:hover,#lejanias:hover,#elCastillo:hover,
+#granada:hover,#sanjuandeArama:hover,#fuentedeOro:hover,
+#ptoLleras:hover,#sanMartin:hover,#ptoRico:hover,
+#ptoConcordia:hover,#mapiripan:hover,#barrancadeUpia:hover,
+#cabuyaro:hover,#ptoGaitan:hover,#ptoLopez:hover {
+    fill:#53d0ecfc!important;
+    transition:All 1s ease-in-out;
+    -webkit-transition:All 1s ease-in-out;
+    -moz-transition:All 1s ease-in-out;
+    -o-transition:All 1s ease-in-out;
+}
+
+
+/*fondo video*/
+#video-viewport { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -1; 
+}
+video { 
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+.fullsize-video-bg { 
+    height: 100%; 
+    overflow: hidden; 
+}
+.fullsize-video-bg:before { 
+    content: "";  
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 0; 
+}
+.fullsize-video-bg:after { 
+    content: ""; 
+    background-size: 3px 3px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    /*width: 100%; */
+    height: 100%; 
+    z-index: 1; 
+}
+.fullsize-video-bg .inner { 
+    display: table; 
+    width: 100%; 
+    max-width: 24em; 
+    height: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+    position: relative; 
+    z-index: 2; 
+    text-shadow: 0 1px 5px rgba(0,0,0,.5); 
+}
+.fullsize-video-bg .inner > div { 
+    text-align: center; 
+    display: table-cell; 
+    vertical-align: middle; 
+    padding: 0 2em; 
+}
+/*fondo video*/
+
+#imagegroup{
+    width: 280px;
+    height: 225px;
+}
+
+#imagegroup img{
+    width: 266px;
+    height: 221px;
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+   /* #Elearning {
+        margin-top: 201px;
+        margin-left: -20px;
+        z-index: 1000;
+        position: relative;
+    }
+    #Elearning img{
+        width: 374px;
+    }
+    #Magazin {
+        margin-left: -20px;
+        z-index: 1000;
+        position: relative;
+    }
+    #Magazin img{
+        width: 319px;
+    }*/
+    #Instruct {
+        /* width: 200px; */
+        margin-top: 354px;
+        margin-left: -233px;
+    }
+    #Instruct img{
+        width: 78%;
+    }
+    #Logos {
+        margin-top: 27px;
+        margin-left: -284px;
+    }
+    #Logos img{
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    /*#Elearning {
+        margin-top: 208px;
+        margin-left: -20px;
+        z-index: 1000;
+        position: relative;
+    }*/
+    #Logos img{
+        width: 99%;
+    }
+}
+
+@media  (min-width : 480px) and (max-width: 767px){
+    /*#Elearning {
+        margin-top: 395px;
+        margin-left: -20px;
+        z-index: 1000;
+        position: relative;
+    }
+    #Elearning img {
+        width: 688px;
+    }
+    #Magazin img {
+        width: 564px;
+    }*/
+    #Instruct {
+        width: 505px;
+        margin-top: 671px;
+        margin-left: -442px;
+    }
+    #Instruct img {
+        width: 100%;
+    }
+    #Logos {
+        margin-top: 27px;
+        margin-left: -542px;
+    }
+    #Logos img {
+        width: 100%;
+    }   
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .modal {
+    top: 0%;
+    }
+    svg {
+        margin-top: 47px;
+    }
+    #Instruct {
+        margin-top: 122px;
+        margin-left: -14px;
+    }
+
+    #Instruct img{
+        width: 216px;
+        margin-left: 108px;
+    }
+     #Logos {
+        margin-top: 10px;
+    }
+    #Logos img{
+        margin-left: 33px;
+        width: 381px;
+    }
+
+    /*#Elearning img {
+        width: 201px;
+    }
+
+    #Magazin img {
+        width: 173px;
+    }*/
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    body{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .modal {
+        position: fixed;
+        top: 5%;
+    }
+    svg {
+        margin-top: 2px;
+    }
+
+    #Instruct img {
+        margin-top: 106px;
+        margin-left: 35px;
+        width: 247px;
+    }
+    #Logos img{
+        margin-top: 58px;
+        margin-left: 91px;
+        width: 499px;
+    }
+    
+    /*#Elearning {
+        margin-top: 170px;
+        margin-left: -20px;
+        z-index: 1000;
+        position: relative;
+    }
+
+    #Elearning img {
+        width: 230px;
+    }
+
+    #Magazin img {
+        width: 200px;
+    }*/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1366px) {
+    /*#Magazin img {
+        width: 265px;
+    }
+    #Elearning img {
+        width: 324px;
+    }*/
+    #Logos img {
+        margin-top: 58px;
+        margin-left: 113px;
+        width: 499px;
+    }
+}
+@media only screen and (min-width : 1920px) {
+   /*menu*/
+   #menu{
+    margin-top: 125px;
+   }
+   #Elearning{
+        margin-top: 0px;
+        margin-left: 5px;
+        z-index: 1000;
+        position: relative;
+    }
+    #Magazin{
+        margin-top: 120px;
+        margin-left: 90px;
+        z-index: 1000;
+        position: relative;
+    }
+    svg {
+        margin-top: 18px;
+    }
+    #Instruct img {
+        margin-top: 92px;
+        margin-left: 87px;
+        width: 340px;
+    }
+    #logos{
+        margin-top: 90px;
+    }
+    #Logos img {
+        margin-top: 58px;
+        margin-left: 98px;
+        width: 650px;
+    }
+}
+
+/*slider*/
