@@ -10,7 +10,7 @@
       </div>
       <!-- menu-->
       <div class="row" id="menutadesktop">
-        <div class="hidden-xs hidden-sm col-md-11 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="hidden-xs hidden-sm col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3" id="enterate">
             <a href="http://enterate.dev">
               <img src="assets/img/enterate.png" class="img-responsive" alt="enterate" >
@@ -64,59 +64,25 @@
       </div>
       <div class="row" id="footer">
         <!-- REDES-->
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <ul id="redes">
             <li>
               <p id="redessociales">Siguenos en redes sociales </p>
             </li>
             <li>
               <a href="">
-                <img src="assets/img/redes.png" class="img-responsive" alt="redes sociales, facebook, instagram">
+                <img src="assets/img/facebook.png" class="img-responsive" alt="redes sociales, facebook">
+              </a>
+              <a href="">
+                <img src="assets/img/instagram.png" class="img-responsive" alt="redes sociales, instagram">
               </a>
             </li>
           </ul>
         </div>
         <!-- FIN REDES-->
-        <!-- SLIDER-->
-        <div class="hidden-xs hidden-sm  col-md-4 col-lg-4">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="assets/img/s-01.jpg" alt="imagen">
-                <div class="carousel-caption"></div>
-              </div>
-              <div class="item">
-                <img src="assets/img/s-02.jpg" alt="imagen">
-                <div class="carousel-caption">
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/img/s-03.jpg" alt="imagen">
-                <div class="carousel-caption">
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/img/s-04.jpg" alt="imagen">
-                <div class="carousel-caption">
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-        <!-- FIN SLIDER-->
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+        
+        <!-- LOGOS -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <a href="">
             <img src="assets/img/gobernacion.png"  class="img-responsive" alt="Gobernación del Meta">
           </a>
