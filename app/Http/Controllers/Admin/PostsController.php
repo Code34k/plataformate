@@ -67,12 +67,11 @@ class PostsController extends Controller
         $post->body = $request->get('body');
         $post->save();
 
-        return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido Guardada');
+        return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido Actualizado');
     }
 
     public function show(Post  $post)
-    {   
-    
+    {       
         return view('posts.show', compact('post'));
     }
 

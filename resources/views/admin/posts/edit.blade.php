@@ -13,6 +13,7 @@
 @endsection
 @section('content')
 <div class="row">
+@if ($post->photos->count() )
 	<div class="col-md-12">
 		<div class="box box-primary">
 			<div class="box box-body">
@@ -20,7 +21,7 @@
 					@foreach($post->photos as $photo)
 					<form method="POST" action="{{ route('admin.photos.destroy', $photo) }}">
 						{{ method_field('DELETE') }} {{ csrf_field() }}
-						<div class="col-md-3">
+						<div class="col-xs-4 col-md-3">
 							<button class="btn btn-danger btn-xs" style="position:absolute;">
 								<i class="fa fa-remove"> </i>
 							</button>
@@ -32,6 +33,7 @@
 			</div>
 		</div>
 	</div>
+@endif
 	<form method="POST" action="{{ route('admin.posts.update', $post) }}">
 		{{ csrf_field() }} {{ method_field('put') }}
 	<div class="col-xs-12 col-sm-8 col-md-8">

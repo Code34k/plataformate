@@ -12,17 +12,17 @@
       <div class="row" id="menutadesktop">
         <div class="hidden-xs hidden-sm col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3" id="enterate">
-            <a href="http://enterate.dev">
+            <a href="http://enterate.dev" target="_blank">
               <img src="assets/img/enterate.png" class="img-responsive" alt="enterate" >
             </a>
           </div>
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5" id="organizaciones">
-            <a href="{{ URL::to('mapa') }}">
+            <a href="{{ URL::to('mapa') }}" target="_blank">
               <img src="assets/img/organizaciones.png" class="img-responsive" alt="organizaciones juveniles" >
             </a>
           </div>
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3" id="formate">
-            <a href="http://formarte.dev">
+            <a href="http://formarte.dev" target="_blank">
               <img src="assets/img/formatevir.png" class="img-responsive" alt="formate virtual" >
             </a>
           </div>
@@ -70,10 +70,10 @@
               <p id="redessociales">Siguenos en redes sociales </p>
             </li>
             <li>
-              <a href="">
+              <a href="http://www.facebook.com/juventudesmeta" target="_blank">
                 <img src="assets/img/facebook.png" class="img-responsive" alt="redes sociales, facebook">
               </a>
-              <a href="">
+              <a href="http://www.instagram.com/juventudesmeta" target="_blank">
                 <img src="assets/img/instagram.png" class="img-responsive" alt="redes sociales, instagram">
               </a>
             </li>
@@ -82,8 +82,8 @@
         <!-- FIN REDES-->
         
         <!-- LOGOS -->
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <a href="">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="gobernacion" >
+          <a href="http://www.meta.gov.co" target="_blank">
             <img src="assets/img/gobernacion.png"  class="img-responsive" alt="Gobernación del Meta">
           </a>
         </div>
@@ -119,7 +119,7 @@ $(function() {
 
 });
 
-/*function fitVideo() {
+function fitVideo() {
 
     $('#video-viewport').width($('.fullsize-video-bg').width());
     $('#video-viewport').height($('.fullsize-video-bg').height());
@@ -136,6 +136,6 @@ $(function() {
     $('#video-viewport').scrollLeft(($('video').width() - $('.fullsize-video-bg').width()) / 2);
     $('#video-viewport').scrollTop(($('video').height() - $('.fullsize-video-bg').height()) / 2);
 
-};*/
+};
   </script>
 @endpush

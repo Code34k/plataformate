@@ -89,6 +89,9 @@ font-weight: bold;
   color: #219EBD;
 
 }
+#gobernacion{
+	    padding-top: 2%;
+}
 @media (max-width: 768px) {
 	#logo{
 		text-align: center;

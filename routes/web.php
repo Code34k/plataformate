@@ -5,7 +5,7 @@ Route::get('/', 'PagesController@home' );
 Route::get('/mapa', 'PagesController@mapa');
 Route::get('/grupos', 'PagesController@grupos');
 Route::get('/grupos/{post}', 'PostsController@show');
-Route::get('/municipio/{municipio}', 'MunicipiosController@show')->name('municipio.show');
+Route::get('/municipios/{municipio}', 'MunicipiosController@show')->name('municipios');
 
 
 
@@ -26,7 +26,7 @@ function(){
 	Route::put('posts/{post}', 'PostsController@update')->name('admin.posts.update');
 
 	Route::post('posts/{post}/photos', 'PhotosController@store')->name('admin.posts.photos.store');
-	Route::delete('photos/{photos}', 'PhotosController@destroy')->name('admin.photos.destroy');
+	Route::delete('photos/{photo}', 'PhotosController@destroy')->name('admin.photos.destroy');
 });
 
 // Authentication Routes...
