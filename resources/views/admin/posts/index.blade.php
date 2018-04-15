@@ -34,12 +34,24 @@
          				<td>{{ $post->ngrupo }}</td>
          				<td>{{ $post->resumen }}</td>
          				<td>
-                  <a href="#" 
-                  class="btn btn-xs btn-default"
-                  target="_blank" 
-                  ><i class="fa fa-eye"></i></a>
-         					<a href="{{ route('admin.posts.edit', $post) }}" class="btn btn-xs btn-info"><i class="fa fa-pencil"></i></a>
-         					<a href="#" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                  <a href="{!! url('grupos', $post->url) !!}" 
+                    class="btn btn-xs btn-default"
+                    target="_blank" 
+                    ><i class="fa fa-eye"></i>
+                  </a>
+         					<a href="{{ route('admin.posts.edit', $post) }}" 
+                      class="btn btn-xs btn-info">
+                    <i class="fa fa-pencil"></i>
+                   </a>
+                   <form method="POST" 
+                        action="{{ route('admin.posts.destroy', $post) }}" 
+                        style="display:inline;">
+                      {{ csrf_field() }} {{ method_field('DELETE') }}
+                      <button  class="btn btn-xs btn-danger"
+                        onclick="return confirm('¿Estás seguro de querer eliminar este grupo?')"
+                      ><i class="fa fa-times"></i></button>
+                   </form>
+         					
          				</td>
          			</tr>
          			@endforeach

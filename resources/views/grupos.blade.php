@@ -6,7 +6,7 @@
 	<div class="row">
 	    <div class="col-lg-4" id="imagegroup">
 	        @if($post->photos->count() > 0 )
-				<figure><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt=""></figure>			
+				<figure><img src="{{ url($post->photos->first()->url) }}" class="img-responsive" alt=""></figure>			
 			@endif			
 	    </div>
 	    <div class="col-lg-8" id="asoc">
