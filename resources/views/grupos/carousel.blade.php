@@ -9,7 +9,6 @@
       @endforeach
 
   </ol>
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
       @foreach ($post->photos as $photo)
@@ -18,7 +17,6 @@
            </div>
       @endforeach 
   </div>
-
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

@@ -14,7 +14,7 @@ class Municipio extends Model
     }
 
     //retorna los post asosciados al municipio
-    public function post()
+    public function posts()
     {
         return $this->hasMany(Post::class);
     }

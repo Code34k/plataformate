@@ -5,7 +5,7 @@ Route::get('/', 'PagesController@home' );
 Route::get('/mapa', 'PagesController@mapa');
 Route::get('/grupos', 'PagesController@grupos');
 Route::get('/grupos/{post}', 'PostsController@show');
-Route::get('/municipio/{municipio}', 'MunicipiosController@show')->name('municipio.show');
+Route::get('/municipios/{municipio}', 'MunicipiosController@show')->name('municipios');
 
 
 
@@ -15,18 +15,18 @@ Route::group([
 	'namespace' => 'Admin',
 	'middleware' => 'auth'],
 function(){
-
+	//administrador
 	Route::get('/', 'AdminController@index')->name('dashboard');
-	
+	//post
 	Route::get('posts', 'PostsController@index')->name('admin.posts.index');
 	Route::get('posts/create', 'PostsController@create')->name('admin.posts.create');
-	Route::post('posts', 'PostsController@store')->name('admin.posts.store');
-	
+	Route::post('posts', 'PostsController@store')->name('admin.posts.store');	
 	Route::get('posts/{post}', 'PostsController@edit')->name('admin.posts.edit');
 	Route::put('posts/{post}', 'PostsController@update')->name('admin.posts.update');
-
+	Route::delete('posts/{post}', 'PostsController@destroy')->name('admin.posts.destroy');
+	//photos
 	Route::post('posts/{post}/photos', 'PhotosController@store')->name('admin.posts.photos.store');
-	Route::delete('photos/{photos}', 'PhotosController@destroy')->name('admin.photos.destroy');
+	Route::delete('photos/{photo}', 'PhotosController@destroy')->name('admin.photos.destroy');
 });
 
 // Authentication Routes...

@@ -13,6 +13,7 @@
 @endsection
 @section('content')
 <div class="row">
+@if ($post->photos->count() )
 	<div class="col-md-12">
 		<div class="box box-primary">
 			<div class="box box-body">
@@ -20,7 +21,7 @@
 					@foreach($post->photos as $photo)
 					<form method="POST" action="{{ route('admin.photos.destroy', $photo) }}">
 						{{ method_field('DELETE') }} {{ csrf_field() }}
-						<div class="col-md-3">
+						<div class="col-xs-4 col-md-3">
 							<button class="btn btn-danger btn-xs" style="position:absolute;">
 								<i class="fa fa-remove"> </i>
 							</button>
@@ -32,6 +33,7 @@
 			</div>
 		</div>
 	</div>
+@endif
 	<form method="POST" action="{{ route('admin.posts.update', $post) }}">
 		{{ csrf_field() }} {{ method_field('put') }}
 	<div class="col-xs-12 col-sm-8 col-md-8">
@@ -77,13 +79,13 @@
 						placeholder="Ingresa el resumen">{{ old('resumen', $post->resumen) }}</textarea>	
 					{!! $errors->first('resumen', '<span class="help-block">:message</span>') !!}	
 				</div>
-				<div class="form-group {{ $errors->has('municipio') ? 'has-error': '' }}">
+				<div class="form-group {{ $errors->has('municipio_id') ? 'has-error': '' }}">
 					<label>Municipios</label>
-					<select name="municipio" class="form-control">
+					<select name="municipio_id" class="form-control">
 						<option value="">Seleccione un municipio</option>
 						@foreach($municipios as $municipio)
 							<option value="{{ $municipio->id }}" 
-									{{ old('municipio') == $municipio->id ? 'selected' : '' }}
+									{{ old('municipio_id') == $municipio->id ? 'selected' : '' }}
 								>{{ $municipio->name }}</option>
 						@endforeach
 					</select>	
@@ -112,9 +114,10 @@
 	<!-- Dropzone -->
 	<script src="/adminlte/plugins/dropzone/js/dropzone.min.js"></script>
 	<script>	  		
-		    // Replace the <textarea id="editor1"> with a CKEditor
+		    // Replace the <textarea id="editor"> with a CKEditor
 		    // instance, using default configuration.
 			CKEDITOR.replace('editor');   
+
 			CKEDITOR.config.height = 315; 	  
 
 		    var myDropzone = new Dropzone('.dropzone', {
@@ -133,6 +136,7 @@
 
 		    myDropzone.on('error', function(file, res){
 		    	var msg = res.errors.photo[0];
+				//var msg = res.photo[0];
 		    	//console.log(res.errors.photo[0]);
 		    	$('.dz-error-message:last> span').text(msg);
 		    });

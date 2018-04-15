@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Photo;
+use App\Municipio;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -24,4 +25,5 @@ class PagesController extends Controller
         $posts = Post::all();         
     	return view('grupos', compact('posts'));
     }
+
 }

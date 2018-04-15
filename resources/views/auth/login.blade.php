@@ -34,7 +34,8 @@
     <p class="login-box-msg">Ingresa tus datos para iniciar sesión</p>
 
     <form method="POST" action="{{ route('login') }}">
-                        @csrf
+        {{ csrf_field() }}
+
       <div class="form-group {{ $errors->has('email') ? ' is-invalid' : '' }} has-feedback">
         <input type="email"
             class="form-control"

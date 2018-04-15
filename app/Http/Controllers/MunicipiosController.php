@@ -10,11 +10,11 @@ use Illuminate\Http\Request;
 class MunicipiosController extends Controller
 {
     public function show(Municipio $municipio)
-    {
-        //$post = $municipio->post;
-
-        return view('grupos.show', [
-            'post' => $municipio->post()->simplePaginate(9)
+    { 
+       //$posts =  $municipio->posts;
+        
+        return view('municipios',  [
+            'posts' => $municipio->posts
         ]);
     }    
 }
