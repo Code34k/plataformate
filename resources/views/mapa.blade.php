@@ -22,17 +22,22 @@
 
             <div id="Magazin">
               <a href="http://enterate.dev">
-                <img src="assets/img/map/enterate2.png" onmouseover="this.src='assets/img/map/enterate.png';" onmouseout="this.src='assets/img/map/enterate2.png';"class="" alt="">
+                <img src="assets/img/map/enterate2.png" onmouseover="this.src='assets/img/map/enterate.png';" onmouseout="this.src='assets/img/map/enterate2.png';" alt="enterate">
               </a>
             </div>
             <div id="Elearning">
               <a href="http://formarte.dev">
-                <img src="assets/img/map/formatevir2.png" onmouseover="this.src='assets/img/map/formatevir.png';" onmouseout="this.src='assets/img/map/formatevir2.png';"class="" alt="">
+                <img src="assets/img/map/formatevir2.png" onmouseover="this.src='assets/img/map/formatevir.png';" onmouseout="this.src='assets/img/map/formatevir2.png';" alt="formate">
               </a>
+            </div>
+            <div id="pdj">
+            <a href="#">
+              <img src="assets/img/map/pdj.png" alt="plataforma departamental de juventudes">
+            </a>
             </div>
           </div>
           <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151.82 997.45" class="img-responsive">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151.82 997.45" >
                <g id="Capa_2" data-name="Capa 2">
                 <g id="mapa">
                   <g id="depMeta">
@@ -158,11 +163,14 @@
                 </g>
               </svg>
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="imagenes">
             <div id="Instruct"><img src="assets/img/map/instrucciones.png" class="" alt=""></div>
             <div id="Logos">
               <a href="www.meta.gov.co" target="_blank">
-              <img src="assets/img/map/logos.png" class="" alt="">
+                <img src="assets/img/gobierno.gif" alt="">
+              </a>
+              <a href="#" target="_blank">
+                <img src="assets/img/gerencia.gif" class="" alt="">
               </a>
             </div>
           </div>

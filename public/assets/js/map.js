@@ -41,7 +41,7 @@ var villavicencio = document.getElementById("villavicencio");
   //contenido
   $.ajax({
     type: "GET",
-    url: "/municipios/acacias",
+    url: "/municipios/Acacias",
      success: function(a) {
        $('.contenido').html(a);
       }

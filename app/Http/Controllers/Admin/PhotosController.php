@@ -18,7 +18,7 @@ class PhotosController extends Controller
     	]);
 
 		$post->photos()->create([
-			'url' => request()->file('photo')->store('posts', 'public');;
+			'url' => request()->file('photo')->store('posts','public'),
 		]);
        
 	}
