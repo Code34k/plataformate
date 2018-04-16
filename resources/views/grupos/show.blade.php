@@ -28,7 +28,7 @@
 		<div class="row">
 		<div class="images">			
 			  @if($post->photos->count() === 1)
-				<figure><img src="{{ url($post->photos->first()->url) }}" class="img-responsive" alt=""></figure>			
+				<figure><img src="{{ url('storage', $post->photos->first()->url) }}" class="img-responsive" alt=""></figure>			
 			@elseif($post->photos->count() > 1)
 				<div class="gallery">
 					@foreach($post->photos->take(4) as $photo)

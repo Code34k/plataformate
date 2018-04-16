@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 class Post extends Model
 { 	    
 		protected $fillable = [
-			'ngrupo', 'ngrupo', 'resumen', 'representante', 'municipio_id', 'body',	
+			'ngrupo', 'url', 'resumen', 'representante', 'municipio_id', 'body',	
 		];
 
 	 protected static function boot()

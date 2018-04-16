@@ -4,12 +4,12 @@
 <!--Contenido-->
 	@foreach($posts as $post )
 	<div class="row">
-	    <div class="col-lg-4" id="imagegroup">
+	    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="imagegroup">
 	        @if($post->photos->count() > 0 )
-				<figure><img src="{{ url($post->photos->first()->url) }}" class="img-responsive" alt=""></figure>			
+				<figure><img src="{{ url('storage',$post->photos->first()->url) }}" class="img-responsive" alt=""></figure>			
 			@endif			
 	    </div>
-	    <div class="col-lg-8" id="asoc">
+	    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="asoc">
 	        <h4 class="asotitle">{{ $post->ngrupo }}</h4>
 	        <p class="text-justify" id="asotext">{{ $post->resumen}}</p>	        
 	        <p style="color:#fff;" id="asorepre"><strong>REPRESENTANTE</strong></p>

@@ -25,7 +25,7 @@
 							<button class="btn btn-danger btn-xs" style="position:absolute;">
 								<i class="fa fa-remove"> </i>
 							</button>
-							<img  class="img-responsive" src="{{ url($photo->url) }}">
+							<img  class="img-responsive" src="{{ url('storage',$photo->url) }}">
 						</div>
 					</form>
 					@endforeach
@@ -129,11 +129,8 @@
 		    		'X-CSRF-TOKEN': '{{ csrf_token() }}'
 		    	},		    	
 		    	//dictDefaultMessage: 'Arrastra las fotos aquí para subirlas',
-
-
 		    });
 		    
-
 		    myDropzone.on('error', function(file, res){
 		    	var msg = res.errors.photo[0];
 				//var msg = res.photo[0];
